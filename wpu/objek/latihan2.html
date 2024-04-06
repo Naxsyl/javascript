@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lathian ke 2 Object</title>
+  </head>
+  <body>
+    <script>
+      // Object Literal
+      var mhs1 = {
+        nama: "Muhammad Nasril Nufa",
+        nrp: "0909090990",
+        email: "nasril@gmail.com",
+        jurusan: "teknik komputer",
+      };
+
+      var mhs2 = {
+        nama: "Muhammad Nasril Nufa",
+        nrp: "0909090990",
+        email: "nasril@gmail.com",
+        jurusan: "teknik komputer",
+      };
+
+      // function declaration
+      function buatObjectMahasiswa(nama, nrp, email, jurusan) {
+        var mhs = {};
+        mhs.nama = nama;
+        mhs.nrp = nrp;
+        mhs.email = email;
+        mhs.jurusan = jurusan;
+        return mhs;
+      }
+      var mhs3 = buatObjectMahasiswa(
+        "ismi",
+        "0808",
+        "ismi@gmail.com",
+        "kedoktoran"
+      );
+      // Constructor
+      function Mahasiswa(nama, nrp, email, jurusan) {
+        this.nama = nama;
+        this.nrp = nrp;
+        this.email = email;
+        this.jurusan = jurusan;
+      }
+
+      var mhs4 = new Mahasiswa(
+        "ica",
+        "090302",
+        "ica@gmail.com",
+        "pendidikan ips"
+      );
+    </script>
+  </body>
+</html>
