@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Var vs Let vs Const</title>
+  </head>
+  <body>
+    <h1>Belajar Var let const konsep hoisting</h1>
+
+    <script>
+      // tidak eror tapi variabel i di isi dengan undifine
+      // console.log(i);
+      // var i = 10;
+      // let i = 10; ini akan eror
+      // const i = 10; ini juga eror
+
+      // function tes() {
+      //   for (var i = 0; i < 10; i++) {
+      //     console.log(i);
+      //   }
+      // }
+      // tes();
+      // console.log(i);
+
+      // (function () {
+      //   for (var i = 0; i < 10; i++) { ganti var menjadi let kalo mau jadi block scope
+      //     console.log(i);
+      //   }
+      // })();
+      // console.log(i);
+
+      // Const tidak seimutabel itu masih bisa di ubah tipis tipis
+      const mhs = {
+        nama: "nasril",
+        umur: 17,
+      };
+      // yang gagal
+      // mhs = {
+      //   jurusan: "rekayasa",
+      // };
+
+      // mhs.umur = 19; berhasil
+
+      console.log(mhs);
+    </script>
+  </body>
+</html>

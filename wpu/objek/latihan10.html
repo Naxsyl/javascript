@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <h1>Belajar Arrow Function</h1>
+
+    <script>
+      // Function Expression
+      //   const tampilNama = function (nama) {
+      //     return `Halo ${nama}`;
+      //   };
+      //   console.log(tampilNama("nasril"));
+
+      //   const tampilNama = (nama) => {
+      //     return `Halo ${nama}`;
+      //   };
+      //   console.log(tampilNama("nasril"));
+
+      //   const tampilNama = (nama, waktu) => {
+      //     return `Selamat ${waktu}, ${nama}`;
+      //   };
+      //   console.log(tampilNama("nasril", "malam"));
+
+      //   implisit return
+      //   const tampilNama = (nama) => `Halo ${nama}`;
+      //   console.log(tampilNama("nasril"));
+
+      let mhs = ["nasril", "ismi", "raya"];
+      //   let jumlahHuruf = mhs.map(function (nama) {
+      //     return nama.length;
+      //   });
+      //   console.log(jumlahHuruf);
+
+      //   let jumlahHuruf = mhs.map(nama => nama.length);
+      //   console.log(jumlahHuruf);
+
+      let jumlahHuruf = mhs.map((nama) => ({
+        nama: nama,
+        jumlahHuruf: nama.length,
+      }));
+      console.table(jumlahHuruf);
+    </script>
+  </body>
+</html>
