@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fillter, Map & Reduce</title>
+  </head>
+  <body>
+    <h1>Belajar High Order Function Pada Fillter, Map & Reduce</h1>
+
+    <script>
+      const angka = [-15, 72, -38, 91, -24, 50, -63, 9, -47, 82];
+
+      //   Mencari Angka >= 20
+      //   const newAngka = [];
+      // for
+      //   for (let i = 0; i < angka.length; i++) {
+      //     if (angka[i] >= 20) {
+      //       newAngka.push(angka[i]);
+      //     }
+      //   }
+
+      //   console.log(newAngka);
+
+      //   Fillter
+      //   const newAngka = angka.filter(function (a) {
+      //     return a >= 20;
+      //   });
+      //   console.log(newAngka);
+      // Versi singkat menggunakan arrow function
+      //   const newAngka = angka.filter((a) => a >= 20);
+      //   console.log(newAngka);
+
+      //   Map
+      //   const newAngka = angka.map((a) => a * 2);
+      //   console.log(newAngka);
+      //   console.log(angka);
+
+      //   Reduce
+      // Jumlahkan seluruh elemen pada array
+      //   0 + -15 + 72 + -38 + 91 + -24 + 50 + -63 + 9 + -47 + 82
+      //   const newAngka = angka.reduce(
+      //     (accumulator, currentValue) => accumulator + currentValue,
+      //     0 // parameter tersembunyi
+      //   );
+      //   console.log(newAngka);
+
+      // Method Chaining
+      // Cari angka > 20
+      // kalikan 4
+      // Jumlahkan
+      const hasil = angka
+        .filter((a) => a > 20)
+        .map((a) => a * 4)
+        .reduce((acc, curr) => acc + curr);
+      console.log(hasil);
+    </script>
+  </body>
+</html>
