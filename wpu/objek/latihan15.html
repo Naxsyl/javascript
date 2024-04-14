@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Literal</title>
+  </head>
+  <body>
+    <script>
+      // Template Literals/ Template String
+      //   const nama = "nasril";
+      //   const umur = 19;
+      //   console.log(`Halo Nama saya ${nama}, Umur saya ${umur} tahun.`);
+
+      // Embedded Expressions
+      //   console.log(`${1 + 1}`);
+      //   console.log(`${alert("Halo")}`);
+      //   const x = 22;
+      //   console.log(`${x % 2 == 0 ? "Genap" : "Ganjil"}`);
+
+      // HTML Fragments
+      const mhs = {
+        nama: "Nasril",
+        umur: 19,
+        nrp: "12345",
+        email: "Nasril@gmail",
+      };
+
+      const el = `<div class="mhs">
+      <h2>${mhs.nama}</h2>
+      <span class="nrp">${mhs.nrp}</span>
+  </div>`;
+
+      console.log(el);
+    </script>
+  </body>
+</html>
