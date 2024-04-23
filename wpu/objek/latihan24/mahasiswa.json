@@ -1,0 +1,23 @@
+[
+  {
+    "nama": "Muhammad Nasril Nufa",
+    "nrp": "12345",
+    "email": "nasril@gmail.com",
+    "jurusan": "Teknik Informatika",
+    "idDosenWali": 1
+  },
+  {
+    "nama": "Imam Nur",
+    "nrp": "12345",
+    "email": "nasril@gmail.com",
+    "jurusan": "Teknik Informatika",
+    "idDosenWali": 1
+  },
+  {
+    "nama": "Ismi Nabilatul Aisyah",
+    "nrp": "12345",
+    "email": "nasril@gmail.com",
+    "jurusan": "Teknik Informatika",
+    "idDosenWali": 1
+  }
+]
