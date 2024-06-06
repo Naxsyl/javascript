@@ -1,0 +1,17 @@
+{
+  "name": "latihan3",
+  "version": "1.0.0",
+  "description": "Belajar Node Js dan Npm",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "ls",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Naxsyl",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "validator": "^13.5.2"
+  }
+}
